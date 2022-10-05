@@ -1,25 +1,20 @@
 ---
 lab:
-  title: ラボ 1:データ モデリング
+  title: 'ラボ 1:データ モデリング'
   module: 'Module 2: Introduction to Microsoft Dataverse'
-ms.openlocfilehash: 93bccc216d07bc3f609755887c2c57fcfdaa8e4d
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154409"
 ---
+
 # <a name="lab-1-data-modeling"></a>ラボ 1:データ モデリング
 
 ## <a name="scenario"></a>シナリオ
 
-ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパス訪問は現在、紙の記録簿に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
+Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
 
 キャンパスの管理者は、建物へのアクセスがセキュリティ担当者によって管理され、すべての訪問者がホストによって事前に登録され、記録されることが要求される訪問者登録システムを近代化したいと考えています。
 
 このコース全体を通して、アプリケーションを構築するとともに自動化を行って、ベローズ カレッジの管理担当者とセキュリティ担当者がキャンパス内の建物へのアクセスを管理および制御できるようにします。
 
-このラボでは、環境をセットアップし、Microsoft Dataverse データベースを作成し、変更を追跡するソリューションを作成します。 また、次の要件をサポートするデータ モデルも作成します。
+In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
 
 - R1 - スケジュールされたキャンパス訪問の情報を追跡します
 
@@ -33,13 +28,13 @@ ms.locfileid: "147154409"
 
 学習環境を準備するには、次の手順を実行します。
 
-- メタデータの説明 (テーブルおよびリレーションシップ) については、[データ モデルのドキュメント](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)を参照してください。 Ctrl キーを押しながらクリックするか、リンクを右クリックして、データ モデル ドキュメントを新しいウィンドウで開くことができます。
+- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
 - 訪問テーブルを作成する
 - Excel スプレッドシートを使用して訪問データをインポートする
 
 ## <a name="prerequisites"></a>前提条件
 
-- **モジュール 0 ラボ 0 - ラボ環境の検証** の完了
+- **モジュール 0 ラボ 0 - ラボ環境の検証**の完了
 
 ## <a name="things-to-consider-before-you-begin"></a>始める前に考慮すべきこと
 
@@ -51,7 +46,7 @@ ms.locfileid: "147154409"
 
 ### <a name="task-1-create-visit-table-and-columns"></a>タスク \#1:訪問テーブルと列を作成する
 
-**訪問** テーブルには、訪問者、スケジュールされた時間、各訪問の実際の時間などのキャンパス訪問に関する情報が含まれます。
+**訪問**テーブルには、訪問者、スケジュールされた時間、各訪問の実際の時間などのキャンパス訪問に関する情報が含まれます。
 
 訪問チェックイン プロセス中に尋ねられたときに、訪問者が簡単に入力して解釈できる一意の番号を毎回ごとの訪問に割り当てたいと思います。
 
@@ -79,7 +74,7 @@ ms.locfileid: "147154409"
 
     - **[データの種類]** で **[日付と時刻]** を選択します。
 
-    - **必須** フィールドで、 **[必須のビジネス]** を選択します。
+    - **必須**フィールドで、 **[必須のビジネス]** を選択します。
 
     - **[詳細オプション]** を展開します。
 
@@ -95,7 +90,7 @@ ms.locfileid: "147154409"
 
     - **[データの種類]** で **[日付と時刻]** を選択します。
 
-    - **必須** フィールドで、 **[必須のビジネス]** を選択します。
+    - **必須**フィールドで、 **[必須のビジネス]** を選択します。
 
     - **[詳細オプション]** を展開します。
 
@@ -111,7 +106,7 @@ ms.locfileid: "147154409"
 
     - **[データの種類]** で **[日付と時刻]** を選択します。
 
-    - **必須** フィールドで、これを **[任意]** のままにします。
+    - **必須**フィールドで、これを **[任意]** のままにします。
 
     - **[詳細オプション]** を展開します。
 
@@ -127,7 +122,7 @@ ms.locfileid: "147154409"
 
     - **[データの種類]** で **[日付と時刻]** を選択します。
 
-    - **必須** フィールドで、これを **[任意]** のままにします。
+    - **必須**フィールドで、これを **[任意]** のままにします。
 
     - **[詳細オプション]** を展開します。
 
@@ -171,7 +166,7 @@ ms.locfileid: "147154409"
 
 このタスクでは、Excel ファイルから訪問データをインポートします。
 
-1. **Visits.xlsx** ファイルがデスクトップに格納されている必要があります。 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) をまだダウンロードしていない場合は、ダウンロードします。
+1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
 
 2. [https://make.powerapps.com](https://make.powerapps.com/) にまだサインインしていない場合は、サインインします。
 
@@ -179,13 +174,13 @@ ms.locfileid: "147154409"
 
 4. 左側のナビゲーションを使用して **[Dataverse]** を展開し、 **[テーブル]** を選択します。
 
-5. 前の演習で作成した **訪問** テーブルを見つけて開きます。
+5. 前の演習で作成した**訪問**テーブルを見つけて開きます。
 
 6. 上部のメニューを使用して、**[インポート]** の横にあるドロップダウン矢印を選択し、**[Excel からデータをインポートする]** を選択します。
 
 7. 表示されたメニューで、 **[アップロード]** ボタンを選択します。
 
-8. 以前にダウンロードした **Visits.xlsx** ファイルを見つけて選択します。 (このファイルのアップロードには、1 から 2 分かかる場合があります。 マッピング エラーが存在するというメッセージが表示されても心配ありません。それについては、次で修正します。)
+8. ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。
 
 9. **[列のマップ]** をクリックします ([列のマップ] オプションを表示するには、右にスクロールする必要がある場合があることに注意してください)。
 
@@ -208,7 +203,7 @@ ms.locfileid: "147154409"
 
 14. 右上隅にある **[インポート]** をクリックし、データのインポートを完了します。
 
-**注:**  データがテーブルにインポートされるまで数分かかる場合があります。 複数のエラーが発生しても心配はなく、コースの残りの部分にも影響しません。
+キャンパス訪問は現在、紙の記録簿に記録されています。
 
 15. **[X]** をクリックして [データのインポート] パネルを閉じます。
 
