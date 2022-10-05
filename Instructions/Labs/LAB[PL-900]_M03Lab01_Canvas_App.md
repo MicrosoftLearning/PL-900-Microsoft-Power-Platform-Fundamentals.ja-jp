@@ -8,9 +8,9 @@ lab:
 
 ## <a name="scenario"></a>シナリオ
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパス訪問は現在、紙の記録簿に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
 
-Currently, campus administration is leveraging an Excel spreadsheet to track visitor registration. They would like to modernize their visitor registration system where access to the buildings is controlled by security personnel and all visits are required to be pre-registered and recorded by their hosts.
+現在、キャンパス管理では、Excel スプレッドシートを利用して訪問者の登録を追跡しています。 現在の訪問者登録システムでは、建物へのアクセスがセキュリティ担当者によって管理されており、すべての訪問を訪問先で事前に登録し、記録する必要があるため、カレッジではこのシステムを最新化したいと考えています。
 
 このコース全体を通して、アプリケーションを構築するとともに自動化を行って、ベローズ カレッジの管理担当者とセキュリティ担当者がキャンパス内の建物へのアクセスを管理および制御できるようにします。
 
@@ -37,11 +37,11 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 ### <a name="task-1-create-the-visits-app"></a>タスク \#1:訪問アプリを作成する
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  <https://make.powerapps.com> に移動します。 再認証が必要な場合は、**[サインイン]** をクリックし、必要に応じて指示に従ってください。
 
 2.  **[[自分のイニシャル] 練習]** 環境がまだ選択されていない場合は、右上で選択します。
 
-3.  If necessary, click the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> icon on the left side of the screen. Under the <bpt id="p1">**</bpt>Start from<ept id="p1">**</ept> section, select <bpt id="p2">**</bpt>Dataverse<ept id="p2">**</ept>.
+3.  必要に応じて、画面の左側にある **[ホーム]** アイコンをクリックします。 **[開始]** セクションで、 **[Dataverse]** を選択します。
 
 4.  Dataverse 接続を選択します。
 
@@ -60,17 +60,17 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 ![訪問データから作成されたキャンバス アプリ。](media/2-canvas-app-from-data.png)
 
-9. ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。
+9. アプリ デザイナーのコマンド バーで、 **[アプリのプレビュー]** ボタン (再生アイコン) を選択します。 *"(キーボードの F5 キーを押してアプリをプレビューすることもできます)。"* 使ってみて、アプリがすぐに使用できる状態であることを確認します。
 
 10. 画面の右上にある **X** を選択して、アプリのプレビューを閉じます。
 
-キャンパス訪問は現在、紙の記録簿に記録されています。
+これで、Dataverse テーブルから Power App が正常に作成されました。 プロセスの次のステップとして、カレッジのブランド化に合わせてアプリを調整します。 次の一連の手順では、いくつかの点でアプリをさらにカスタマイズする手順について説明します。
 
 ### <a name="task-2-modify-and-theme-the-newly-created-app"></a>タスク \#2:新しく作成したアプリのテーマを変更する
 
 このタスクでは、アプリの 3 つの各画面 ([参照]、[詳細]、[編集]) のヘッダー テキストをカスタマイズし、アプリ テーマを変更します。
 
-1.  その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
+1.  [参照] 画面が表示されます。 画面上の **[訪問]** ラベルを選びます。
 
 1.  画面の右側にある [プロパティ] タブで、**[テキスト]** コントロール プロパティを "**ベローズ カレッジの訪問**" に更新します。
 
@@ -102,18 +102,18 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 このタスクでは、新しいアプリをテストします。
 
-1.  アプリ デザイナーでアプリケーションを開いた状態で、**[ファイル]** を選択し、アプリの名前を **[訪問アプリ]** に更新して、**[保存]** を選択します。
+1.  アプリ デザイナーでアプリケーションを開き、[ **設定]** を選択し、[ **全般** ] セクションでアプリの名前を **[アクセス アプリ**] に更新し、 **X** をクリックして設定画面を閉じ、[保存] を選択 **します**。
 
 2.  **戻る**矢印を選んでアプリに戻ります。
 
 3.  左側のナビゲーションを使用して、 **[参照画面 1]** を選択します。
 
-4.  In the app designer, select the <bpt id="p1">**</bpt>preview the app<ept id="p1">**</ept> button (Play icon) on the command bar. <bpt id="p1">*</bpt>(You can also preview the app by pressing F5 on your keyboard.)<ept id="p1">*</ept>
+4.  アプリ デザイナーのコマンド バーで、 **[アプリのプレビュー]** ボタン (再生アイコン) を選択します。 *"(キーボードの F5 キーを押してアプリをプレビューすることもできます)。"*
 
 4.  アプリが開いたら、**[項目の検索]** フィールドに、テキスト「**Maria**
      *」を入力します (検索フィールドに入力された内容に基づいて、ギャラリー内の項目がどのようにフィルター処理されるかに注目してください)。*
 
-5.  現在、キャンパス管理では、Excel スプレッドシートを利用して訪問者の登録を追跡しています。
+5.  **Maria Campbell** の **Contoso Suites** レコードが表示され、行をクリックして移動すると、その訪問の詳細が表示されます。 (**注**: *"Maria Campbell の Contoso Suites レコードが複数表示される場合、いずれかを選択します")。*
 
 6.  レコードを編集するには、アプリの右上隅にある **鉛筆アイコン**を選択します。
 
@@ -121,7 +121,7 @@ Currently, campus administration is leveraging an Excel spreadsheet to track vis
 
 8.  画面の右上隅にある **X** アイコンをクリックすると、キャンバス アプリ エディターに戻ります。
 
-現在の訪問者登録システムでは、建物へのアクセスがセキュリティ担当者によって管理されており、すべての訪問を訪問先で事前に登録し、記録する必要があるため、カレッジではこのシステムを最新化したいと考えています。
+お疲れさまでした。 最初のキャンバス アプリの作成と構成が完了しました。
 
 ## <a name="challenges"></a>課題
 

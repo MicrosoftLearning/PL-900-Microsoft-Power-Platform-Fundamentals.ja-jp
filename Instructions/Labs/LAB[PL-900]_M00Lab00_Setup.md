@@ -8,13 +8,13 @@ lab:
 
 ## <a name="scenario"></a>シナリオ
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパスの訪問者は現在、紙の日誌に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
 
 キャンパスの管理者は、建物へのアクセスがセキュリティ担当者によって管理され、すべての訪問者がホストによって事前に登録され、記録されることが要求される訪問者登録システムを近代化したいと考えています。
 
 このコース全体を通して、アプリケーションを構築するとともに自動化を行って、ベローズ カレッジの管理担当者とセキュリティ担当者がキャンパス内の建物へのアクセスを管理および制御できるようにします。
 
-In this Module 0 lab, you will acquire a Power Platform trial and access the Power Platform admin center. In the admin center, you will then create a <bpt id="p1">**</bpt>Practice<ept id="p1">**</ept> environment that you will perform the majority of your lab work in.
+このモジュール 0 のラボでは、Power Platform 試用版を取得し、Power Platform 管理センターにアクセスします。 次に、管理センターで、ラボ作業の大部分を実行する**実習**環境を作成します。
 
 ## <a name="exercise-1--setup"></a>演習 1 – セットアップ
 
@@ -26,7 +26,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. **[始めましょう]** で、Microsoft 365 の認証情報の電子メール アドレスを **[職場の電子メール アドレスを入力してください]** と書かれたテキスト ボックスに入力して、 **[次へ]** をクリックします。
 
-1. If you see a prompt that you have an existing account with Microsoft. Select <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept>.
+1. Microsoft に既存のアカウントがあることを示すメッセージが表示される場合。 **[サインイン]** を選択します。
 
 1. Authorized Lab Hoster によって提供されたパスワードを入力し、サインインします。
 
@@ -34,7 +34,7 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. 国を変更しないでください。
 
-1. **[電話番号]** に「01234567890」と入力します。
+1. [ **電話番号**] に「0123456789」と入力します。
 
 1. アカウント情報を入力し、 **[作業を開始]** を選択して、Microsoft Power Platform 試用版にサインアップします。
 
@@ -62,4 +62,4 @@ In this Module 0 lab, you will acquire a Power Platform trial and access the Pow
 
 1. **実習**環境が環境の一覧に表示されます。
 
-> Your environment may take a few minutes to provision. Refresh the page if needed.
+> 環境をプロビジョニングするのに数分ほどかかる場合があります。 必要に応じてページを更新します。

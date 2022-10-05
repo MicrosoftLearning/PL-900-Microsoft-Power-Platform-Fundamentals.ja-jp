@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>シナリオ
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパスの訪問者は現在、紙の日誌に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
 
 キャンパスの管理者は、建物へのアクセスがセキュリティ担当者によって管理され、すべての訪問者がホストによって事前に登録され、記録されることが要求される訪問者登録システムを近代化したいと考えています。
 
@@ -32,7 +32,7 @@ Bellows College is an educational organization with multiple buildings on campus
 ## <a name="things-to-consider-before-you-begin"></a>始める前に考慮すべきこと
 
 -   このレポートが想定しているのは、どのような利用者層でしょうか?
--   How will the audience consume the report? Typical device? Location?
+-   利用者はどのようにレポートを活用しますか? 典型的なデバイスを使っていますか? 場所?
 -   視覚化するのに十分なデータがありますか?
 -   訪問に関するデータを分析するために使用できる特性は何ですか?
 
@@ -56,7 +56,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 7.  データの読み込みが完了したら、 **[マイ ワークスペース]** を展開し、**訪問**レポートを選択します ([種類] が **[レポート]** に設定されていることに注目してください)。
 
-8.  Click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>. If <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> menu item is not visible click <bpt id="p2">**</bpt>...<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Edit<ept id="p3">**</ept>.
+8.  **[編集]** をクリックします。 **[編集]** メニュー項目が表示されていない場合は、**[...]** をクリックしてから、**[編集]** を選択します。
 
 これで、ラボで使用する Power BI サービスがセットアップされました。
 
@@ -64,15 +64,15 @@ Bellows College is an educational organization with multiple buildings on campus
 
 1.  **[視覚化]** パネルの "**円グラフ**" アイコンを押して、グラフを挿入します。
 
-2.  Press the drop-down arrow beside <bpt id="p1">**</bpt>bc_building<ept id="p1">**</ept> in the Fields pane. Drag the <bpt id="p1">**</bpt>Building<ept id="p1">**</ept> field and drop it into <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> box.
+2.  [フィールド] ウィンドウの **bc_Visit** の横にあるドロップダウン矢印を押します。 **[建物]** フィールドをドラッグして、 **[凡例]** ボックスにドロップします。
 
-3.  ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。
+3.  **[訪問数]** フィールドをドラッグし、**[値]** ボックスにドロップします。
 
 4.  コーナー ハンドルで円グラフのサイズを変更し、すべてのグラフ コンポーネントが表示されるようにします。
 
 5.  円グラフの外側にあるレポートをクリックして選択を解除し、**視覚化** ウィンドウで 積み上げ縦棒グラフ を選択します。
 
-6.  キャンパスの訪問者は現在、紙の日誌に記録されています。
+6.  [フィールド] ウィンドウの **bc_Visit** の横にあるドロップダウン矢印を押します。 **[訪問]** フィールドをドラッグして、 **[Y 軸]** ターゲット ボックスにドロップします。
 
 7.  **[開始]** フィールドをドラッグして、 **[X 軸]** ターゲット ボックスにドロップします。
 
@@ -84,7 +84,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
     1.  円グラフでさまざまな積み重なったスライスをクリックし、時間レポートの変化を見てみましょう。
 
-    2.  その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
+    2.  縦棒グラフをクリックします。 下方向キーを押して**ドリルダウン**モードを有効にし (またはグラフを右クリックして **[ドリルダウン]** を選び)、列をクリックして次のレベル (日数) にドリルダウンします。
 
     3.  円グラフの変更を確認するには、ドリルアップまたはドリルダウンして、時間縦棒グラフでさまざまなバーを選択します。
 
@@ -96,13 +96,13 @@ Bellows College is an educational organization with multiple buildings on campus
 
 1.  前のタスクからレポートを開く必要があります。
 
-2.  Select <bpt id="p1">**</bpt>Pin to a dashboard<ept id="p1">**</ept> on the menu. Depending on the layout you may need to press <bpt id="p1">**</bpt>...<ept id="p1">**</ept> to show additional menu items.
+2.  メニューの **[ダッシュボードをピン留めする]** を選択します。 レイアウトによっては、追加のメニュー項目を表示するためには **[...]** を押す必要があります。
 
 3.  **[ダッシュボードにピン留めする]** プロンプトで、 **[ 新しいダッシュボード]** を選択します。
 
 4.  **[ダッシュボード名]** として「**キャンパス管理**」と入力し、**[ライブをピン留めする]** を押します。
 
-5.  A pop-up will prompt you that the dashboard has been created. Select <bpt id="p1">**</bpt>Go to dashboard<ept id="p1">**</ept>.
+5.  ダッシュボードが作成されたことがポップアップに表示されます。 **[ダッシュボードへ移動]** を選びます。
 
 6.  表示される円グラフと棒グラフがインタラクティブに動作するかをテストします。
 
@@ -110,7 +110,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 1.  **[キャンパス管理]** ダッシュボードで 、上部の **[データ バーに関する質問]** を選択します。
 
-2.  Enter <bpt id="p1">**</bpt>buildings by number of visits<ept id="p1">**</ept> in Q&amp;A area. A bar chart will be displayed.
+2.  Q&A エリアで、**訪問数別に見る建物**と入力します。 棒グラフが表示されます。
 
 3.  **[ビジュアルをピン留めする]** を選択します。
 
@@ -118,7 +118,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 5.  **[Q&A を終了]** をクリックします。
 
-Your <bpt id="p1">**</bpt>Campus Management<ept id="p1">**</ept> dashboard should be displayed with three visuals on it. You may have to scroll down to see the new Q&amp;A visual.
+**キャンパス管理**ダッシュボードには、3 つのビジュアルが表示されます。 新しい Q&A ビジュアルを表示するには、下にスクロールする必要がある場合があります。
 
 ダッシュボードは次のようになります。
 
