@@ -1,14 +1,9 @@
 ---
 lab:
-  title: ラボ 0:ラボ環境を検証する
+  title: 'ラボ 0:ラボ環境を検証する'
   module: 'Module 0: Course introduction'
-ms.openlocfilehash: d25543d93be7e40749c8fee3a01c35b3a8f2947b
-ms.sourcegitcommit: 8a89b7eacd1a65eaa7c5d6bff0dc7254991c4dde
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154397"
 ---
+
 # <a name="lab-0-validate-lab-environment"></a>ラボ 0:ラボ環境を検証する
 
 ## <a name="scenario"></a>シナリオ
@@ -19,13 +14,13 @@ ms.locfileid: "147154397"
 
 このコース全体を通して、アプリケーションを構築するとともに自動化を行って、ベローズ カレッジの管理担当者とセキュリティ担当者がキャンパス内の建物へのアクセスを管理および制御できるようにします。
 
-このモジュール 0 のラボでは、Power Platform 試用版を取得し、Power Platform 管理センターにアクセスします。 次に、管理センターで、ラボ作業の大部分を実行する **実習** 環境を作成します。
+このモジュール 0 のラボでは、Power Platform 試用版を取得し、Power Platform 管理センターにアクセスします。 次に、管理センターで、ラボ作業の大部分を実行する**実習**環境を作成します。
 
 ## <a name="exercise-1--setup"></a>演習 1 – セットアップ
 
 ### <a name="task-1---acquire-your-microsoft-power-platform-trial-tenant"></a>タスク \#1 - Microsoft Power Platform の試用版テナントを取得する
 
-1. Authorized Lab Hoster から **Microsoft 365 の認証情報** をコピーします。
+1. Authorized Lab Hoster から **Microsoft 365 の認証情報**をコピーします。
 
 1. <https://powerapps.microsoft.com> に移動して **[無料で試す]** をクリックします。
 
@@ -39,7 +34,7 @@ ms.locfileid: "147154397"
 
 1. 国を変更しないでください。
 
-1. **[電話番号]** に「01234567890」と入力します。
+1. [ **電話番号**] に「0123456789」と入力します。
 
 1. アカウント情報を入力し、 **[作業を開始]** を選択して、Microsoft Power Platform 試用版にサインアップします。
 
@@ -65,6 +60,6 @@ ms.locfileid: "147154397"
 
     1. 次のタブで、すべての選択を既定値のままにして、 **[保存]** をクリックします。
 
-1. **実習** 環境が環境の一覧に表示されます。
+1. **実習**環境が環境の一覧に表示されます。
 
 > 環境をプロビジョニングするのに数分ほどかかる場合があります。 必要に応じてページを更新します。
