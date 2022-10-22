@@ -8,7 +8,7 @@ lab:
 
 ## <a name="scenario"></a>シナリオ
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visitors are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパスの訪問者は現在、紙の日誌に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
 
 キャンパスの管理者は、建物へのアクセスがセキュリティ担当者によって管理され、すべての訪問者がホストによって事前に登録され、記録されることが要求される訪問者登録システムを近代化したいと考えています。
 
@@ -31,11 +31,11 @@ Bellows College is an educational organization with multiple buildings on campus
 
 ## <a name="exercise-1-create-visit-notification-flow"></a>演習 1:訪問通知フローを作成する
 
-<bpt id="p1">**</bpt>Objective:<ept id="p1">**</ept> In this exercise, you will create a Power Automate flow that implements the requirement. The visitor should be sent an email that includes the unique code assigned to the visit when a visit is created.
+**目的:** この演習では要件を実装する Power Automate フローを作成します。 訪問者には、訪問の作成時に訪問に割り当てられた一意のコードを含むメールが送信されます。
 
 ### <a name="task-1-create-a-flow"></a>タスク \#1:フローを作成する
 
-1.  Navigate to <ph id="ph1">&lt;https://make.powerapps.com&gt;</ph>. You may need to reauthenticate - click <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> and follow instructions if needed.
+1.  <https://make.powerapps.com> に移動します。 再認証が必要な場合は、**[サインイン]** をクリックし、必要に応じて指示に従ってください。
 
 2.  **[[自分のイニシャル] 練習]** 環境がまだ選択されていない場合は、右上で選択します。
 
@@ -59,11 +59,11 @@ Bellows College is an educational organization with multiple buildings on campus
 
     3.  **[範囲]** に **[組織]** を選択します
 
-    4.  On the trigger step, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>. Rename this trigger <bpt id="p1">**</bpt>"When a visit is added"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+    4.  トリガー ステップで、省略記号 (**...**) をクリックし、**[名前の変更]** をクリックします。 このトリガーの名前を「**訪問が追加されたとき**」に変更します。 これは優れた慣習で、あなたや他のフロー編集者が、詳細に踏み込まなくてもステップの目的を理解できるようにするものです。
 
 ### <a name="task-2-create-a-step-to-get-the-visitor-row"></a>タスク \#2:訪問者行を取得するステップを作成する
 
-1.  ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。
+1.  **[+ New step (+ 新しいステップ)]** を選択します。 この手順は、メールを含む訪問者情報を取得するために必要です。
 
 2.  **Dataverse** を検索します。
 
@@ -71,16 +71,16 @@ Bellows College is an educational organization with multiple buildings on campus
 
 4.  **[テーブル名]** として **[連絡先]** を選択します
 
-5.  キャンパスの訪問者は現在、紙の日誌に記録されています。
+5.  **[行 ID]** フィールドを選びます。 ウィンドウがポップアップ表示され、[動的コンテンツ] または [式] を選びます。
 
-6.  その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
+6.  **[行 ID]** フィールドで、動的コンテンツ リストから **[訪問者 (値)]** を選択します。 この手順では、このフローをトリガーするために作成された "訪問" 行の "連絡先" を検索しています。 メール アドレスは "連絡先" テーブルの一部なので、訪問者にメールを送信するためにこの情報が必要になります。
 
-7.  On this action, click the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and click <bpt id="p2">**</bpt>Rename<ept id="p2">**</ept>.
-        Rename this action <bpt id="p1">**</bpt>"Get the Visitor"<ept id="p1">**</ept>. This is a good practice, so you and other flow editors can understand the purpose of the step without having to dive into the details.
+7.  このアクションで、省略記号 ( **...** ) をクリックし、 **[名前の変更]** をクリックします。
+        このアクションの名前を **[訪問者を取得]** に変更します。 これは優れた慣習で、あなたや他のフロー編集者が、詳細に踏み込まなくてもステップの目的を理解できるようにするものです。
 
 ### <a name="task-3-create-a-step-to-send-an-email-to-the-visitor"></a>タスク \#3:メールを訪問者に送信するステップを作成する
 
-1.  Click <bpt id="p1">**</bpt>+ New step<ept id="p1">**</ept>. This is the step that will send an email to the visitor.
+1.  **[+ 新しいステップ]** をクリックします。 これは、訪問者にメールを送信する手順です。
 
 2.  「*メール*」を検索し、**[Office 365 Outlook]** コネクタと **[メールの送信 (V2)]** アクションを選択します。
 
@@ -97,7 +97,7 @@ Bellows College is an educational organization with multiple buildings on campus
 
 7.  **メール本文**に次のテキストを入力します。
 
->   Dynamic content needs to be placed where fields are named in brackets. It is recommended to copy &amp; paste all text first and then add dynamic content in the correct places.
+>   動的コンテンツは、フィールドが括弧で囲まれた場所に配置する必要があります。 最初にすべてのテキストをコピーして貼り付けてから、動的コンテンツを正しい場所に追加することをお勧めします。
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Dear {First Name},
@@ -110,15 +110,15 @@ Bellows College is an educational organization with multiple buildings on campus
    Bellows College
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-8.  Highlight the <bpt id="p1">**</bpt>{First Name}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>First Name<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>Get the Visitor<ept id="p2">**</ept> step.
+8.  **{First Name}** テキストを強調表示します。 これを、**[訪問者の取得]** ステップの **[名]** フィールドに置き換えます。
 
-9.  Highlight the <bpt id="p1">**</bpt>{Scheduled Start}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled Start<ept id="p1">**</ept> field <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+9.  **{Scheduled Start}** テキストを強調表示します。 これを**訪問が追加されたとき**手順の **[Scheduled Start]\(スケジュールされた開始\)** フィールドに置き換えます。
 
-10.  Highlight the <bpt id="p1">**</bpt>{Scheduled End}<ept id="p1">**</ept> text. Replace it with the <bpt id="p1">**</bpt>Scheduled End<ept id="p1">**</ept> field from the <bpt id="p2">**</bpt>When a visit is added<ept id="p2">**</ept> step.
+10.  **{Scheduled End}** テキストを強調表示します。 これを "**訪問が追加されたとき**" ステップの **[終了予定]** フィールドに置き換えます。
 
 11.  **[保存]** をクリックします。
 
-Leave this flow tab open for the next task. You flow should look approximately like the following:
+次のタスクのために、このフロー タブを開いたままにします。 フローはおおよそ次のようになります。
 
 ![フロー ステップの例。](media/4-Flow.png)
 
@@ -132,7 +132,7 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 3.  このブラウザー タブを開いたまま、フローを使用して前のタブに戻ります。
 
-4.  On the command bar, click <bpt id="p1">**</bpt>Test<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Manually<ept id="p1">**</ept> and then click <bpt id="p2">**</bpt>Test<ept id="p2">**</ept>.
+4.  コマンド バーで、**[テスト]** をクリックします。 **[手動]** を選び、**[テスト]** をクリックします。
 
 5.  モデル駆動型アプリを開いた状態でブラウザー タブに移動します。 
 
@@ -152,10 +152,10 @@ Leave this flow tab open for the next task. You flow should look approximately l
 
 8. **[保存して閉じる]** ボタンを選択します。
 
-9. Navigate to the browser tab with your flow test running. After a short delay, you should see the flow running. This is where you can catch any issues in the flow or confirm that it ran successfully.
+9. フロー テストを実行してブラウザー タブに移動します。 しばらくすると、フローが実行されていることがわかります。 ここで、フロー内の問題をキャッチしたり、問題が正常に実行されたことを確認したりすることができます。
 
-After a short delay, you should see an email in your inbox, since you populated John Doe's email as your personal email. Note that it may go to your Junk Email folder.
+John Doe のメール アドレスを個人用メール アドレスとして設定しているので、しばらくすると、受信トレイにメールが届きます。 迷惑メール フォルダーに振り分けられる場合があることに注意してください。
 
 ## <a name="challenges"></a>課題
 
-- Play around with the formatting on the email. How can you make it more professional looking?
+- メールのさまざまな書式を試してみましょう。 どうすればプロ並みの外観になるでしょうか?

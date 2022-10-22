@@ -8,13 +8,13 @@ lab:
 
 ## <a name="scenario"></a>シナリオ
 
-Bellows College is an educational organization with multiple buildings on campus. Campus visits are currently recorded in paper journals. The information is not captured consistently, and there are no means to collect and analyze data about the visits across the entire campus.
+ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパス訪問は現在、紙の記録簿に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
 
 キャンパスの管理者は、建物へのアクセスがセキュリティ担当者によって管理され、すべての訪問者がホストによって事前に登録され、記録されることが要求される訪問者登録システムを近代化したいと考えています。
 
 このコース全体を通して、アプリケーションを構築するとともに自動化を行って、ベローズ カレッジの管理担当者とセキュリティ担当者がキャンパス内の建物へのアクセスを管理および制御できるようにします。
 
-In this lab you will access your environment, create a Microsoft Dataverse database, and create a solution to track your changes. You will also create a data model to support the following requirements:
+このラボでは、環境をセットアップし、Microsoft Dataverse データベースを作成し、変更を追跡するソリューションを作成します。 また、次の要件をサポートするデータ モデルも作成します。
 
 - R1 - スケジュールされたキャンパス訪問の情報を追跡します
 
@@ -28,7 +28,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 学習環境を準備するには、次の手順を実行します。
 
-- Refer to the <bpt id="p1">[</bpt>data model document<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)</ept> for the metadata description (tables and relationships). You can hold CTRL+click or right click the link to open the data model document in a new window.
+- メタデータの説明 (テーブルおよびリレーションシップ) については、[データ モデルのドキュメント](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)を参照してください。 Ctrl キーを押しながらクリックするか、リンクを右クリックして、データ モデル ドキュメントを新しいウィンドウで開くことができます。
 - 訪問テーブルを作成する
 - Excel スプレッドシートを使用して訪問データをインポートする
 
@@ -166,7 +166,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 このタスクでは、Excel ファイルから訪問データをインポートします。
 
-1. You should have the <bpt id="p1">**</bpt>Visits.xlsx<ept id="p1">**</ept> file stored on your Desktop. Download <bpt id="p1">[</bpt>Visits.xlsx<ept id="p1">](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx)</ept> if you do not.
+1. **Visits.xlsx** ファイルがデスクトップに格納されている必要があります。 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) をまだダウンロードしていない場合は、ダウンロードします。
 
 2. [https://make.powerapps.com](https://make.powerapps.com/) にまだサインインしていない場合は、サインインします。
 
@@ -180,7 +180,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 7. 表示されたメニューで、 **[アップロード]** ボタンを選択します。
 
-8. ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。
+8. 以前にダウンロードした **Visits.xlsx** ファイルを見つけて選択します。 (このファイルのアップロードには、1 から 2 分かかる場合があります。 マッピング エラーが存在するというメッセージが表示されても心配ありません。それについては、次で修正します。)
 
 9. **[列のマップ]** をクリックします ([列のマップ] オプションを表示するには、右にスクロールする必要がある場合があることに注意してください)。
 
@@ -203,7 +203,7 @@ In this lab you will access your environment, create a Microsoft Dataverse datab
 
 14. 右上隅にある **[インポート]** をクリックし、データのインポートを完了します。
 
-キャンパス訪問は現在、紙の記録簿に記録されています。
+**注:**  データがテーブルにインポートされるまで数分かかる場合があります。 複数のエラーが発生しても心配はなく、コースの残りの部分にも影響しません。
 
 15. **[X]** をクリックして [データのインポート] パネルを閉じます。
 
