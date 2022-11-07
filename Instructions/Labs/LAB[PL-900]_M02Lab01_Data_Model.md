@@ -164,7 +164,7 @@ lab:
 
 ### <a name="task-11-load-excel-file-to-onedrive"></a>タスク \#1.1: Excel ファイルを OneDrive に読み込む
 
-1. **Visits.xlsx** ファイルがデスクトップに格納されている必要があります。 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) をまだダウンロードしていない場合は、ダウンロードします。
+1. **Visits.xlsx** ファイルが **C:/LabFiles** で仮想マシンに格納されている必要があります。 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) をまだダウンロードしていない場合は、ダウンロードします。
 
 2. [https://make.powerapps.com](https://make.powerapps.com/) にまだサインインしていない場合は、サインインします。
 
