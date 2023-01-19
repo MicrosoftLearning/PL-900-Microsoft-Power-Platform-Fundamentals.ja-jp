@@ -14,7 +14,7 @@ lab:
 
 このコース全体を通して、アプリケーションを構築するとともに自動化を行って、ベローズ カレッジの管理担当者とセキュリティ担当者がキャンパス内の建物へのアクセスを管理および制御できるようにします。
 
-このラボでは、環境をセットアップし、Microsoft Dataverse データベースを作成し、変更を追跡するソリューションを作成します。 また、次の要件をサポートするデータ モデルも作成します。
+このラボでは、環境にアクセスし、Microsoft Dataverse データベースを作成します。 また、次の要件をサポートするデータ モデルも作成します。
 
 - R1 - スケジュールされたキャンパス訪問の情報を追跡します
 
@@ -23,6 +23,7 @@ lab:
 - R3 – 訪問をスケジュール、記録、および管理します
 
 最後に、サンプル データを Microsoft Dataverse にインポートします。
+
 
 ## <a name="high-level-lab-steps"></a>ラボ手順の概要
 
@@ -40,9 +41,11 @@ lab:
 
 - 名前付け規則 - 名前は、十分注意して入力してください。
 
+
 ## <a name="exercise-1-create-new-table"></a>演習 1:新しいテーブルを作成する
 
 **目的:** このテーブルでは、新しいカスタム テーブル "訪問" を作成します。
+
 
 ### <a name="task-1-create-visit-table-and-columns"></a>タスク \#1:訪問テーブルと列を作成する
 
@@ -170,7 +173,7 @@ lab:
 
 3. **[[自分のイニシャル] 練習]** 環境がまだ選択されていない場合は、右上で選択します。
 
-4. 左上隅にある [ワッフル] ボタンをクリックしてアプリケーションを変更し、 **[OneDrive]** を選びます。 (OneDrive が設定されるまでに、少し時間がかかる場合があります。 [OneDrive の準備ができました] と画面に表示されたら、それをクリックします。)
+4. 左上隅にある [ワッフル] ボタンをクリックしてアプリケーションを変更し、 **[OneDrive]** を選びます。 (OneDrive が設定されるまでに、少し時間がかかる場合があります。 **[OneDrive の準備ができました]** と画面に表示されたら、それをクリックします。)
 
 5. 上部のメニューの **[アップロード]** をクリックして、 **[ファイル]** を選びます。
 
@@ -210,14 +213,14 @@ lab:
 
 15. **[列マッピング]** で。 列を対応する宛先列にマップします。
 
-| [対象になる列]| ソースの値 |
-| - | - |
-| crxxx_ActualEnd| actual end |
-| crxxx_ActualStart| actual start |
-| crxxx_Code| code |
-| crxxx_Name| name |
-| crxxx_ScheduledEnd| scheduled end |
-| crxxx_ScheduledStart| scheduled start |
+| [対象になる列]  | ソースの値   |
+|:---------------------|:----------------|
+| crxxx_ActualEnd      | actual end      |
+| crxxx_ActualStart    | actual start    |
+| crxxx_Code           | code            |
+| crxxx_Name           | name            |
+| crxxx_ScheduledEnd   | scheduled end   |
+| crxxx_ScheduledStart | scheduled start |
 
 16. **[次へ]** をクリックします。
 
