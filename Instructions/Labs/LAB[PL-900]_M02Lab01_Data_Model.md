@@ -4,9 +4,9 @@ lab:
   module: 'Module 2: Introduction to Microsoft Dataverse'
 ---
 
-# <a name="lab-1-data-modeling"></a>ラボ 1:データ モデリング
+# ラボ 1:データ モデリング
 
-## <a name="scenario"></a>シナリオ
+## シナリオ
 
 ベローズ カレッジは、キャンパス内に複数の建物を持つ教育機関です。 キャンパス訪問は現在、紙の記録簿に記録されています。 その情報は一貫して把握されておらず、キャンパス全体の訪問に関するデータを収集して分析する手段もありません。
 
@@ -25,29 +25,29 @@ lab:
 最後に、サンプル データを Microsoft Dataverse にインポートします。
 
 
-## <a name="high-level-lab-steps"></a>ラボ手順の概要
+## ラボ手順の概要
 
 学習環境を準備するには、次の手順を実行します。
 
 - メタデータの説明 (テーブルおよびリレーションシップ) については、[データ モデルのドキュメント](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/blob/master/Allfiles/Campus%20Management.png)を参照してください。 Ctrl キーを押しながらクリックするか、リンクを右クリックして、データ モデル ドキュメントを新しいウィンドウで開くことができます。
-- 訪問テーブルを作成する
+- 訪問テーブルを作成します
 - Excel スプレッドシートを使用して訪問データをインポートする
 
-## <a name="prerequisites"></a>前提条件
+## 前提条件
 
 - **モジュール 0 ラボ 0 - ラボ環境の検証**の完了
 
-## <a name="things-to-consider-before-you-begin"></a>始める前に考慮すべきこと
+## 始める前に考慮すべきこと
 
 - 名前付け規則 - 名前は、十分注意して入力してください。
 
 
-## <a name="exercise-1-create-new-table"></a>演習 1:新しいテーブルを作成する
+## 演習 1:新しいテーブルを作成する
 
 **目的:** このテーブルでは、新しいカスタム テーブル "訪問" を作成します。
 
 
-### <a name="task-1-create-visit-table-and-columns"></a>タスク \#1:訪問テーブルと列を作成する
+### タスク \#1:訪問テーブルと列を作成する
 
 **訪問**テーブルには、訪問者、スケジュールされた時間、各訪問の実際の時間などのキャンパス訪問に関する情報が含まれます。
 
@@ -161,11 +161,11 @@ lab:
 
     - **[保存]** をクリックします。
 
-## <a name="exercise-2-import-data"></a>演習 2:データをインポートする
+## 演習 2:データをインポートする
 
 **目的:** この演習では、サンプル データを Dataverse データベースにインポートします。
 
-### <a name="task-11-load-excel-file-to-onedrive"></a>タスク \#1.1: Excel ファイルを OneDrive に読み込む
+### タスク \#1.1: Excel ファイルを OneDrive に読み込む
 
 1. **Visits.xlsx** ファイルが **C:/LabFiles** で仮想マシンに格納されている必要があります。 [Visits.xlsx](https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/raw/master/Allfiles/Visits.xlsx) をまだダウンロードしていない場合は、ダウンロードします。
 
@@ -181,7 +181,7 @@ lab:
 
  **注:** このファイルは、コンピューターの **[すべてのファイル]** フォルダーにあります。
  
-### <a name="task-12-create-a-dataflow"></a>タスク \#1.2: データフローを作成する
+### タスク \#1.2: データフローを作成する
 
 1. [https://make.powerapps.com](https://make.powerapps.com/) にまだサインインしていない場合は、サインインします。
 
@@ -230,7 +230,7 @@ lab:
 
 **注:**  データがテーブルにインポートされるまで数分かかる場合があります。 複数のエラーが発生しても心配はなく、コースの残りの部分にも影響しません。
 
-### <a name="task-3-verify-data-import"></a>タスク \#3: データのインポートを確認する
+### タスク \#3: データのインポートを確認する
 
 1. データがインポートされたら、画面の左側にあるナビゲーションを使用して、 **[訪問]** テーブルを再度選択します。
 
