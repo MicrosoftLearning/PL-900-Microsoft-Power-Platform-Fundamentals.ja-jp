@@ -1,7 +1,7 @@
 ---
 lab:
   title: '課題 3:モデル駆動型アプリをビルドする方法'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # 課題 3:モデル駆動型アプリをビルドする方法

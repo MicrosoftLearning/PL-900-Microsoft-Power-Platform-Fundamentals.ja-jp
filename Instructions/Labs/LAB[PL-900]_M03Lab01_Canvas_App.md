@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'ラボ 2:キャンバス アプリをビルドする方法'
-  module: 'Module 3: Get started with Power Apps'
+  module: 'Module 3: Describe how to build applications with Microsoft Power Apps'
 ---
 
 # ラボ 2:キャンバス アプリをビルドする方法

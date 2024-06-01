@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'ラボ 4:自動化ソリューションの構築方法'
-  module: 'Module 4: Get Started with Power Automate'
+  module: 'Module 4: Describe building automation with Microsoft Power Automate'
 ---
 
 # ラボ 4:自動化ソリューションの構築方法
