@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'ラボ 5:簡単なダッシュボードを作成する方法'
-  module: 'Module 5: Get Started with Power BI'
+  module: 'Module 5: Describe the capabilities of Microsoft Power BI'
 ---
 
 ## ラボ 5:簡単なダッシュボードを作成する方法

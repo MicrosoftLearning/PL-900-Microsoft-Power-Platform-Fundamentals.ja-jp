@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'ラボ 1:データ モデリング'
-  module: 'Module 2: Introduction to Microsoft Dataverse'
+  module: 'Module 2: Identify foundational components of Microsoft Power Platform'
 ---
 
 # ラボ 1:データ モデリング
