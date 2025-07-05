@@ -1,4 +1,4 @@
-# PL-900:Power Platform の基礎
+# PL-900:Microsoft Power Platform の概要
 
 - **[最新の学生ハンドブックと AllFiles コンテンツをダウンロードする](https://learningdownloadcenter.microsoft.com/)**
 - **あなたは MCT ですか?** - [MCT 向けの GitHub ユーザー ガイド](https://microsoftlearning.github.io/MCT-User-Guide/)をご覧ください
