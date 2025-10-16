@@ -232,3 +232,6 @@ Contoso では、現在、連絡先情報を Dataverse インスタンスに格�
     ![完成した [Session Registration] フォームのスクリーンショット。  ](media/Session-registration-form.png)
 
 1.  **[保存して閉じる]** ボタンを選択します。
+
+
+

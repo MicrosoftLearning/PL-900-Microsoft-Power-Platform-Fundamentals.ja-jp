@@ -61,10 +61,10 @@ lab:
 ## 演習 2:画像をダウンロードする
 
 1. テナントでブラウザー ウィンドウを開き、「https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles」と入力します。
-2. スクリーンショットに画像が表示されます。
+1. スクリーンショットに画像が表示されます。
 
-![イメージ ファイル。](media/images.png)
+    ![イメージ ファイル。](media/images.png)
 
-3. 各画像を個別に開き、**[ダウンロード]** アイコンを選択してダウンロードします。
+1. 各画像を個別に開き、**[ダウンロード]** アイコンを選択してダウンロードします。
 
-![画像のダウンロード ボタン。](media/download-image.png)
+    ![画像のダウンロード ボタン。](media/download-image.png)
