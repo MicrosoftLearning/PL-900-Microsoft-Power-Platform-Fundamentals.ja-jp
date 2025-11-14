@@ -208,7 +208,7 @@ Contoso Consulting は、IT および AI コンサルティング サービス�
     最後に、検索コントロール フィールドに入力されたテキストに基づいてデータを設定するように **Equipment List** ギャラリーを構成します。
 
 1.  先ほど作成した **Equipment List** ギャラリーを選択します。
-1.  **Items** プロパティに次の数式を入力します: `Search([@'Equipments'], EquipSearchInput.Text, 'Equipment Name',Category)`
+1.  **Items** プロパティに次の数式を入力します: `Search([@'Equipment'], EquipSearchInput.Text, 'Equipment Name',Category)`
 
     ![Items の PowerFx 数式のスクリーンショット。](media/powerfx-formula.png)
 
@@ -261,7 +261,7 @@ Contoso Consulting は、IT および AI コンサルティング サービス�
     3.  **最小幅:** 150
     4.  **高さ:** 40
        
-1. **SecondRecord1** コンテナーを選択し、**[挿入]** ボタンを選択します。
+1. **SelectedRecord1** コンテナーを選択し、**[挿入]** ボタンを選択します。
 1. **[検索]** フィールドに「**保存**」と入力し、**[保存]** アイコンを選択します。
 1. **[保存]** ボタンを次のように構成します。
 
@@ -335,6 +335,8 @@ Contoso Consulting は、IT および AI コンサルティング サービス�
 1.  Power Apps Studio で、**[保存]** ボタンを選択します。
 1.  **[発行]** ボタンを選びます。
 1.  **[このバージョンの発行]** を選択します。
+
+
 
 
 
