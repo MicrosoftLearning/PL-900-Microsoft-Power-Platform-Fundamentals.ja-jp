@@ -39,9 +39,8 @@ Contoso は、Power Platform を使用して、年間を通じて開催するさ
 > **注:**  前のラボでは、イベント管理ソリューションを作成し、それをこの環境の優先ソリューションとして設定しました。 そのため、データ モデルを作成するためにソリューションに直接移動する必要はありません。 作成した項目は自動的にソリューションに追加されます。
 
 > **注:**  Copilot を使用して任意の列を作成するときに、テーブルに **[要注意]** のエラー メッセージが表示された場合は、次のステップに従って列を手動で作成できます。
-1. **[表示オプション]** を選択し、**[データの表示]** を選択します。 テーブルの構造が表示されます。
-1. **[+ 新しい列]** をクリックして新しい列を追加します。
-
+> 1. **[表示オプション]** を選択し、**[データの表示]** を選択します。 テーブルの構造が表示されます。
+> 1. **[+ 新しい列]** をクリックして新しい列を追加します。
 
 ## タスク 1:データ モデルを作成する
 
@@ -94,25 +93,25 @@ Contoso は現在、寄付者の連絡先情報を Dataverse インスタンス�
     Copilot はおそらく、Event Session と Event Speaker の 2 つのテーブルを作成します。 Contacts は話者となるため、Event Speaker テーブルは削除します。
 
 1.  必要に応じて、**[次は何をしますか]** フィールドに次のように入力します: *`Remove the Event Speaker table.`*
-1.  Copilot に、次のテキストを入力します: *`Add a new text column to the Event Session table called Session Description.`*
+1.  **[次に何をしますか?]** で、次のテキストを入力します: *`Add a new text column to the Event Session table called Session Description.`*
 
     ![追加された Event Session テーブルを示すスクリーンショット](media/546162a8b040a7bdcdcd5c3e2be44b4d.png)
 
     次に、**Session Registrations** という最後のテーブルを 1 つ追加します。 このテーブルは、特定のセッションに登録する個人を管理するために使用されます。
 
-1.  Copilot に、次のテキストを入力します: *`Add a new table called Session Registrations.`*
+1.  **[次に何をしますか?]** で、次のテキストを入力します: *`Add a new table called Session Registrations.`*
 
     Copilot はおそらく、Session Registration、Session または Participant (または他の何か) などの 2 つのテーブルを作成します。 Contacts は参加者になることができるため、Participant テーブルを削除します。 Session Registration 以外の他のテーブル (Session など) が作成されている場合は、それらを削除します。
 
-1.  必要に応じて、Copilot に次のテキストを入力します: *`Remove the Participant table.`*
+1.  必要に応じて、**[次に何をしますか?]** で、次のテキストを入力します: *`Remove the Participant table.`*
     
     場合によっては、セッション登録テーブルに Participant Name 列が追加されることがあります。 後でデータ モデルを保存するときに問題が発生する可能性があるため、これを削除する必要があります。 (後で別の参加者列に置き換える予定です。)  
 
-1.  必要に応じて、Copilot に次のテキストを入力します: *`Remove the Participant Name column from the Session Registration table.`*
+1.  必要に応じて、**[次に何をしますか?]** で、次のテキストを入力します: *`Remove the Participant Name column from the Session Registration table.`*
 
 1.  Primary Column フィールドがある場合は、次のテキストを入力します: *`Rename the Primary Column to Registration Name in Session Registration table.`*
 
-1.  Copilot に、次のテキストを入力します: *`Add a text column to the Session registration table called Special Instructions.`*
+1.  **[次に何をしますか?]** で、次のテキストを入力します: *`Add a text column to the Session registration table called Special Instructions.`*
 
     完成したセッション登録テーブルは、次の画像のようになります。
 
@@ -287,4 +286,7 @@ Contoso では、イベントの管理に加えて、従業員のチェックア
 1.  [保存] ボタンを選択します。 (初回で、列の保存が失敗する場合は、もう一度試してください。)
 
 これで、Microsoft Dataverse でデータ モデルが正常に作成されました。
+
+
+
 
