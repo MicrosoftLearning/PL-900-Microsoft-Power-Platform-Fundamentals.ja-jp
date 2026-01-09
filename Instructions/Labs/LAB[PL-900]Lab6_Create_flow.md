@@ -4,6 +4,7 @@ lab:
   learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Automate'
   module: 'Module 2: Build a Microsoft Power Automate flow'
 ---
+# 実習ラボ 6 - Power Automate フローを作成する
 
 ## 学習の目的
 
@@ -320,5 +321,6 @@ Contoso は、Power Automate を使用して、顧客がイベントに登録し
 しばらくすると、受信トレイにメールが表示されます。
 
 > **注:**  迷惑メール フォルダーに振り分けられる場合があります。
+
 
 
