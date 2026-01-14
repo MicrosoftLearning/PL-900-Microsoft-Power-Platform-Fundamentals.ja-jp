@@ -4,6 +4,8 @@ lab:
   learning path: 'Learning Path: Demonstrate the capabilities of Microsoft Power Apps'
   module: 'Module 2: Build a canvas app'
 ---
+# 実習ラボ 4 - キャンバス アプリを作成する
+
 ## 学習の目的
 
 この演習では、休暇の申請と管理、機器のチェックアウト申請に従業員が使用できるキャンバス アプリケーションを Copilot を使用して作成します。 このアプリを作成したら、Copilot と Power Apps デザイナーを使用してアプリを修正します。
@@ -336,6 +338,7 @@ Contoso Consulting は、IT および AI コンサルティング サービス�
 1.  Power Apps Studio で、**[保存]** ボタンを選択します。
 1.  **[発行]** ボタンを選びます。
 1.  **[このバージョンの発行]** を選択します。
+
 
 
 
