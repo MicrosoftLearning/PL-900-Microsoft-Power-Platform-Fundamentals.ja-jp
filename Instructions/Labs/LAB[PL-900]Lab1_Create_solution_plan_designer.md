@@ -2,7 +2,7 @@
 lab:
   title: 'ラボ 1: プラン デザイナーを使用してソリューションを作成する'
   learning path: 'Learning Path: Describe the business value of Microsoft Power Platform'
-  module: 'Module 1: Describe the business value of extending business solutions by using Microsoft Power Platform'
+  module: 'Module 2: Describe the business value of extending business solutions by using Microsoft Power Platform'
 ---
 
 # 実習ラボ 1 - プラン デザイナーを使用してソリューションを作成する 
@@ -211,5 +211,6 @@ Contoso では、Power Platform を使用して、機器の返却と貸し出し
 3.  左側のナビゲーションを使って、**[計画]** を選択します。
 4.  **機器貸し出しシステム**プランが一覧表示されていることに注目してください。
 5.  **機器貸し出しシステム**プランを選択して、エディターでプランのバックアップを開きます。
+
 
 
