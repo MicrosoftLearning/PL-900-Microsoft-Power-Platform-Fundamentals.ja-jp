@@ -1,7 +1,13 @@
 ---
 lab:
   title: 'ラボ 0:ラボ環境を検証する'
-  module: 'Module 0: Course Introduction'
+  module: Course Introduction
+  description: このラボでは、Microsoft 365 テナントとこのコースで使用する Power Platform アプリケーションのライセンスが提供されます。 このコースでは、実習ラボ用のテナントが 1 つだけ提供されます。 このテナント内で実行した設定とアクションはロールバックまたはリセットされませんが、提供された仮想マシンはラボ セッションを閉じるたびにリセットされます。 Microsoft 365 と Power Platform は常に進化していることに注意してください。 このドキュメントに記載されている手順は、実際のテナントでの操作とは異なる場合があります。 また、仮想マシンがラボを開始するためのネットワーク接続を確立するまでに数分の遅延が発生する可能性もあります。
+  duration: 10 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - Microsoft 365
 ---
 
 # 実習ラボ 0 - ラボ環境を検証する
@@ -16,7 +22,7 @@ lab:
 
 テナントを有料サブスクリプションに変換することはできません。 このコースの一環として取得したテナントは Microsoft Corporation の財産のままであり、当社はいつでもアクセス権とリポジトリを取得する権利を留保します。
 
-## 演習 1:Microsoft Power Platform にアクセスする
+## 演習 1: [Microsoft Power Platform](/power-apps/maker/signup-for-powerapps) にアクセスする
 
 この演習では、Power Apps にアクセスできることを確認します。
 
@@ -42,6 +48,8 @@ lab:
 
 1. 連絡先情報の入力を求められたら、[国/地域] を既定値のままにして、電話番号に `0123456789` を入力し、**[送信]** を選びます。
 
+1. **[Power Apps へようこそ]** 画面が表示された場合は、**[国/地域]** を **[米国]** に設定したまま、**[開始する]** を選択します。
+
 1. 画面の右上で、**[環境]** が **[Dev One]** に設定されていることを確認します。 ここで、このラボ全体の作業を行います。 設定されていない場合は、**[Dev One]** 環境を選びます。
 
     ![環境セレクター。](media/select-dev-one-environment.png)
@@ -58,13 +66,12 @@ lab:
 
 1. 更新プログラムを適用し、必要に応じてブラウザーを再起動します。
 
-## 演習 2:画像をダウンロードする
+## 演習 2: 部屋予約 zip ファイルをダウンロードする
 
 1. テナントでブラウザー ウィンドウを開き、「https://github.com/MicrosoftLearning/PL-900-Microsoft-Power-Platform-Fundamentals/tree/master/Allfiles」と入力します。
-1. スクリーンショットに画像が表示されます。
+1. 内容は次のようなものです。
 
     ![イメージ ファイル。](media/images.png)
 
-1. 各画像を個別に開き、**[ダウンロード]** アイコンを選択してダウンロードします。
+1. zip ファイルをダウンロードします。
 
-    ![画像のダウンロード ボタン。](media/download-image.png)
