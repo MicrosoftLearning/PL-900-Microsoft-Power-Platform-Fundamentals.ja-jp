@@ -22,7 +22,7 @@ lab:
 
 テナントを有料サブスクリプションに変換することはできません。 このコースの一環として取得したテナントは Microsoft Corporation の財産のままであり、当社はいつでもアクセス権とリポジトリを取得する権利を留保します。
 
-## 演習 1: [Microsoft Power Platform](/power-apps/maker/signup-for-powerapps) にアクセスする
+## 演習 1: Microsoft Power Platform にアクセスする
 
 この演習では、Power Apps にアクセスできることを確認します。
 
